@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Error</title>
+    {% with url = url_for('static', filename='css/style.css') %}
+    <link rel="stylesheet" href="{{ url }}" />
+    {% endwith %}
+  </head>
+  <body>
+    <div class="texto">
+      <h2>Error al autentificarse!!!</h2>
+      <br />
+      <p>Nombre de usuario o Contraseña incorrectos.</p>
+      <br>
+      <a href="/">Inténtalo de nuevo...</a>
+    </div>
+  </body>
+</html>

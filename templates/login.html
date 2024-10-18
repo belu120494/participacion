@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Iniciar sesión</title>
+    {% with url = url_for('static', filename='css/style.css') %}
+    <link rel="stylesheet" href="{{ url }}" />
+    {% endwith %}
+  </head>
+  <body>
+    <div class="ring">
+      <i style="--clr: #00ff0a"></i>
+      <i style="--clr: #ff0057"></i>
+      <i style="--clr: #fffd44"></i>
+      <div class="login">
+        <h2>Inicio de sesión</h2>
+        <form method="POST">
+          <div class="inputBx">
+            <input
+              type="text"
+              name="username"
+              placeholder="Nombre de Usuario"
+              required
+            />
+          </div>
+          <br />
+          <div class="inputBx">
+            <input
+              type="password"
+              name="password"
+              placeholder="Contraseña"
+              required
+            />
+          </div>
+          <br />
+          <div class="inputBx">
+            <input type="submit" value="Iniciar sesión" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
